@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/maparea"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:orientation="vertical" >
+
+		        <com.google.android.maps.MapView
+		            xmlns:android="http://schemas.android.com/apk/res/android"
+		            android:id="@+id/mapview"
+		            android:layout_width="match_parent"
+		            android:layout_height="0dip"
+		            android:layout_weight="50"
+		            android:apiKey="0TrLSpPHKg8DLcBURGc9Rrb5Oxi7j_m-kt3RHbw"
+		            android:clickable="true" />
+
+		        <WebView
+		            android:id="@+id/webview"
+		            android:layout_width="match_parent"
+		            android:layout_height="0dip"
+		            android:layout_weight="50" />
+
+		                    
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/infolist"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="30"
+            android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/aplist"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accesspoints binnen bereik"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+
+        </LinearLayout>
+            <LinearLayout
+            android:id="@+id/allaplist"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alle accesspoints"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
