@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Pomper WifiMap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_render">Heatmap renderen</string>
+    <string name="title_activity_main">Pomper WifiMap</string>
+
+</resources>
